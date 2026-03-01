@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>LMT - Lakshmimayee Traders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: Arial;
@@ -24,18 +25,14 @@
         .box {
             background: white;
             padding: 15px;
-            border-radius: 5px;
+            border-radius: 8px;
             margin-top: 10px;
         }
         footer {
             background: #333;
             color: white;
             text-align: center;
-            padding: 10px;
-        }
-        button {
-            cursor: pointer;
-            border: none;
+            padding: 15px;
         }
         .whatsapp-button {
             background: #25D366;
@@ -44,7 +41,18 @@
             font-size: 16px;
             padding: 12px 20px;
             border-radius: 8px;
-            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .gallery {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 300px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -56,11 +64,21 @@
 </header>
 
 <section>
+
     <h2>About Us</h2>
     <div class="box">
         <p>বাংলা: আমরা সেরা মানের বিল্ডিং ম্যাটেরিয়াল সঠিক দামে সরবরাহ করি।</p>
         <p>हिन्दी: हम सर्वोत्तम गुणवत्ता की बिल्डिंग सामग्री सही मूल्य पर प्रदान करते हैं।</p>
         <p>English: We provide the best quality building materials at the right price.</p>
+    </div>
+
+    <h2>Our Shop Gallery</h2>
+    <div class="box">
+        <div class="gallery">
+            <img src="shop1.jpg" alt="Shop Image 1">
+            <img src="shop2.jpg" alt="Shop Image 2">
+            <img src="shop3.jpg" alt="Shop Image 3">
+        </div>
     </div>
 
     <h2>Our Products</h2>
@@ -77,20 +95,21 @@
     </div>
 
     <h2>Contact</h2>
-    <div class="box" style="background:#ffeedd; border:2px solid #b22222; padding:20px; border-radius:10px;">
+    <div class="box" style="background:#ffeedd; border:2px solid #b22222;">
         <p style="font-weight:bold; font-size:18px;">Phone: 8388929880</p>
-        <p style="font-size:16px;">Address: DURGA NAGAR</p>
+        <p>Address: DURGA NAGAR</p>
         <button 
             class="whatsapp-button"
-            onclick="window.location.href='https://wa.me/918388929880'">
+            onclick="window.location.href='https://wa.me/918388929880?text=Hello%20Lakshmimayee%20Traders!%20I%20hope%20you%20are%20doing%20well.%20I%20am%20interested%20in%20your%20building%20materials.'">
             Order on WhatsApp
         </button>
     </div>
+
 </section>
 
 <footer>
     <p>© 2026 LMT - Lakshmimayee Traders</p>
-    <p>Last deployed by @LMT-Team</p> <!-- এখানে নাম update হয়েছে -->
+    <p>Last deployed by @LMT-Team</p>
 </footer>
 
 </body>
