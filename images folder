@@ -1,7 +1,11 @@
-images/shop1.jpg
-images/shop2.jpg
-images/shop3.jpg
+<h2>Our Shop Gallery</h2>
 
-images/product1.jpg
-images/product2.jpg
-images/product3.jpg
+<div class="box gallery">
+
+<img src="images/shop1.jpg">
+
+<img src="images/shop2.jpg">
+
+<img src="images/shop3.jpg">
+
+</div>
