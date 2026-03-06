@@ -8,7 +8,7 @@
 <style>
 
 body{
-font-family: Arial;
+font-family:Arial;
 margin:0;
 background:#f2f2f2;
 }
@@ -32,7 +32,7 @@ color:#b22222;
 background:white;
 padding:15px;
 border-radius:8px;
-margin-top:10px;
+margin-top:15px;
 }
 
 .gallery{
@@ -42,14 +42,17 @@ gap:10px;
 }
 
 .gallery img{
-width:300px;
+width:100%;
+max-width:300px;
 border-radius:8px;
 }
 
-button{
+.button{
+display:inline-block;
 padding:12px 20px;
+margin-top:10px;
 border:none;
-border-radius:6px;
+border-radius:8px;
 font-size:16px;
 cursor:pointer;
 }
@@ -82,7 +85,6 @@ margin-top:20px;
 <p>Your Trusted Building Materials Supplier</p>
 </header>
 
-
 <section>
 
 <h2>About Us</h2>
@@ -97,45 +99,53 @@ margin-top:20px;
 
 </div>
 
-
-<h2>Our Shop Gallery</h2>
+<h2>Our Shop Photos</h2>
 
 <div class="box gallery">
 
 <img src="images/shop1.jpg">
+
 <img src="images/shop2.jpg">
+
 <img src="images/shop3.jpg">
 
 </div>
-
 
 <h2>Our Products</h2>
 
 <div class="box">
 
 <ul>
+
 <li>Cement</li>
+
 <li>TMT Rod</li>
+
 <li>Bricks</li>
+
 <li>Sand</li>
+
 <li>Stone Chips</li>
+
 <li>Paint</li>
+
 <li>Tiles</li>
+
 </ul>
 
 </div>
-
 
 <h2>Product Photos</h2>
 
 <div class="box gallery">
 
 <img src="images/product1.jpg">
+
 <img src="images/product2.jpg">
+
 <img src="images/product3.jpg">
 
 </div>
-
 
 <h2>Contact</h2>
 
@@ -145,42 +155,33 @@ margin-top:20px;
 
 <p><b>Address:</b> DURGA NAGAR</p>
 
+<a href="https://wa.me/918388929880?text=Hello%20Lakshmimayee%20Traders%2C%20I%20want%20to%20order%20building%20materials." target="_blank">
+
+<button class="button whatsapp">WhatsApp Order</button>
+
+</a>
+
 <br>
 
-<button class="whatsapp"
-onclick="window.location.href='https://wa.me/918388929880?text=Hello%20Lakshmimayee%20Traders%20I%20want%20to%20know%20about%20your%20products'">
+<a href="tel:8388929880">
 
-WhatsApp Order
+<button class="button call">Call Now</button>
 
-</button>
-
-
-<button class="call"
-onclick="window.location.href='tel:8388929880'">
-
-Call Now
-
-</button>
+</a>
 
 </div>
 
-
-<h2>Location</h2>
+<h2>Our Location</h2>
 
 <div class="box">
 
-<iframe
-src="https://www.google.com/maps?q=Durga%20Nagar&output=embed"
-width="100%"
-height="300"
-style="border:0;">
+<iframe src="https://maps.google.com/maps?q=https://maps.app.goo.gl/6Cp6hKt4cdy2bTaQ7&output=embed"
+width="100%" height="300" style="border:0;">
 </iframe>
 
 </div>
 
-
 </section>
-
 
 <footer>
 
@@ -189,7 +190,6 @@ style="border:0;">
 <p>Last deployed by @LMT-Team</p>
 
 </footer>
-
 
 </body>
 </html>
